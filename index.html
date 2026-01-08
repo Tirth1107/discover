@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thenn — Premium Digital Agency</title>
+
+  <meta name="description"
+    content="Thenn is a modern digital agency focused on building clean, fast, and affordable websites. Specializing in UI/UX, branding, and custom development." />
+
+  <!-- SAFE REDIRECT -->
+  <meta http-equiv="refresh" content="10; url=https://www.thenn.in/" />
+  <meta name="robots" content="noindex, follow" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-color: #050505;
+      --surface-color: #0f0f0f;
+      --accent-color: #7c3aed;
+      --accent-glow: rgba(124, 58, 237, 0.3);
+      --text-primary: #ffffff;
+      --text-secondary: #a1a1aa;
+      --glass-bg: rgba(255, 255, 255, 0.03);
+      --glass-border: rgba(255, 255, 255, 0.08);
+      --transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    .bg-glow {
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(circle at 80% 20%, var(--accent-glow), transparent 40%),
+        radial-gradient(circle at 20% 80%, rgba(59, 130, 246, 0.15), transparent 40%);
+      z-index: -1;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 24px;
+    }
+
+    section {
+      padding: 100px 0;
+    }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      padding: 24px 0;
+      backdrop-filter: blur(12px);
+      background: rgba(5, 5, 5, 0.6);
+      border-bottom: 1px solid var(--glass-border);
+      z-index: 999;
+    }
+
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      text-decoration: none;
+      color: white;
+    }
+
+    .nav-links a {
+      margin-left: 32px;
+      color: var(--text-secondary);
+      text-decoration: none;
+    }
+
+    .hero {
+      height: 90vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 8vw, 92px);
+      font-weight: 800;
+      letter-spacing: -3px;
+      background: linear-gradient(#fff, #aaa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      margin-top: 24px;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin-inline: auto;
+    }
+
+    .btn {
+      margin-top: 32px;
+      display: inline-block;
+      padding: 16px 32px;
+      border-radius: 99px;
+      background: var(--accent-color);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .card {
+      background: var(--glass-bg);
+      border: 1px solid var(--glass-border);
+      padding: 32px;
+      border-radius: 20px;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .section-header h2 {
+      font-size: 48px;
+      font-weight: 800;
+    }
+
+    footer {
+      padding: 80px 0 40px;
+      border-top: 1px solid var(--glass-border);
+      text-align: center;
+    }
+
+    [data-reveal] {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: 1s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    [data-reveal].active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bg-glow"></div>
+
+  <nav>
+    <div class="container nav-content">
+      <a class="logo">THENN.</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 data-reveal>Elevating Digital Experiences.</h1>
+        <p data-reveal>
+          This page contains reference information about Thenn.
+          You will be redirected to the official website shortly.
+        </p>
+        <a href="https://www.thenn.in" class="btn" data-reveal>Go Now</a>
+      </div>
+    </section>
+
+    <!-- INFO SECTION -->
+    <section>
+      <div class="container">
+        <div class="section-header" data-reveal>
+          <h2>Company Information</h2>
+          <p>General reference details about Thenn.</p>
+        </div>
+
+        <div class="grid">
+          <div class="card" data-reveal>
+            <h3>Pages</h3>
+            <ul>
+              <li>/</li>
+              <li>/about</li>
+              <li>/services</li>
+              <li>/process</li>
+              <li>/work</li>
+              <li>/contact</li>
+            </ul>
+          </div>
+
+          <div class="card" data-reveal>
+            <h3>Services</h3>
+            <ul>
+              <li>Website Development</li>
+              <li>UI / UX Design</li>
+              <li>Branding</li>
+              <li>Custom Web Apps</li>
+              <li>Maintenance & Support</li>
+            </ul>
+          </div>
+
+          <div class="card" data-reveal>
+            <h3>Founders</h3>
+            <ul>
+              <li>Tirth Joshi — Founder & CEO</li>
+              <li>Dhruman Kaneriya — Co-Founder</li>
+              <li>Vaibhav Makvana — CTO</li>
+            </ul>
+          </div>
+
+          <div class="card" data-reveal>
+            <h3>Contact</h3>
+            <p>
+              Website: https://www.thenn.in<br>
+              Email: contact@thenn.in<br>
+              Phone: +91 70165 65502
+            </p>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:40px;text-align:center" data-reveal>
+          <p>You will be redirected in <strong>10 seconds</strong>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Thenn. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Reveal animation
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => e.isIntersecting && e.target.classList.add('active'));
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('[data-reveal]').forEach(el => observer.observe(el));
+
+    // Redirect fallback
+    setTimeout(() => {
+      window.location.replace("https://www.thenn.in/");
+    }, 10000);
+  </script>
+
+</body>
+</html>
